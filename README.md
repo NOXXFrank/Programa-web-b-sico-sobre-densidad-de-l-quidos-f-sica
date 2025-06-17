@@ -24,7 +24,3 @@ Proyecto web educativo básico que simula cómo distintos líquidos y objetos in
 
 Este proyecto fue desarrollado como una herramienta **muy básica** para ayudar a un estudiante a cumplir con un requisito escolar en física.  
 Aunque no representa una simulación científica rigurosa, **cumple su propósito educativo visual**.
-
----
-
-Desarrollado por [Tu nombre o alias]
