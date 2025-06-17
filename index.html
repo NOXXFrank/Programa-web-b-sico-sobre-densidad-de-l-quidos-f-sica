@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Densidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r104/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+</head>
+<body>
+    <div id="controles">
+        <h1>Simulación de Densidad</h1>
+        <div class="control-group">
+            <button id="agregarBloque">Agregar Bloque</button>
+        </div>
+        <div class="control-group">
+            <label for="liquido">Seleccionar Líquido:</label>
+            <select id="liquido">
+                <option value="agua">Agua</option>
+                <option value="aceite">Aceite</option>
+                <option value="alcohol">Alcohol</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="mezclas">Mezclar Líquidos:</label>
+            <button id="mezclarAguaAceite">Agua y Aceite</button>
+            <button id="mezclarAguaAlcohol">Agua y Alcohol</button>
+            <button id="mezclarAceiteAlcohol">Aceite y Alcohol</button>
+        </div>
+        <div class="control-group">
+            <button id="eliminarLiquidos">Eliminar Líquidos</button>
+        </div>
+        <div class="control-group">
+            <button id="eliminarBloques">Eliminar Bloques</button>
+        </div>
+    </div>
+    <div id="simulacion-container">
+        <canvas id="simulacion"></canvas>
+    </div>
+    <script src="simulacion.js"></script>
+</body>
+</html>
